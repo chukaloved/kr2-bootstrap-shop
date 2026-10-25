@@ -37,3 +37,8 @@
   height: 220px;
   object-fit: contain;
 }
+
+.product-page__img {
+  max-height: 420px;
+  object-fit: contain;
+}

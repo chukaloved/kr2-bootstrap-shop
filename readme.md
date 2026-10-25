@@ -1,1 +1,0 @@
-# kr2-bootstrap-shop

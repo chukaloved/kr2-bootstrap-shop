@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Подробное описание товаров магазина DeviceHub: мыши, микрофоны, клавиатуры, гарнитуры, веб-камеры">
+  <title>Товары — DeviceHub</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Device<span class="text-brand">Hub</span></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="product.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ещё
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html#advantages">Преимущества</a></li>
+                <li><a class="dropdown-item" href="index.html#popular">Популярные товары</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Товары</li>
+      </ol>
+    </nav>
+
+    <h1 class="mb-3">Подробное описание товаров</h1>
+    <p class="lead text-secondary">Характеристики и описание всей периферии из каталога DeviceHub.</p>
+
+    <ul class="nav nav-pills flex-wrap gap-2 mb-2 product-nav">
+        <li class="nav-item"><a class="nav-link" href="#g-pro-x">Мышь Logitech G Pro X Superlight</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fifine-am8">Микрофон Fifine AM8</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fifine-am8t">Микрофон Fifine AM8T</a></li>
+        <li class="nav-item"><a class="nav-link" href="#keychron-k2">Клавиатура Keychron K2</a></li>
+        <li class="nav-item"><a class="nav-link" href="#hyperx-cloud-3">Гарнитура HyperX Cloud III</a></li>
+        <li class="nav-item"><a class="nav-link" href="#logitech-c920">Веб-камера Logitech C920</a></li>
+    </ul>
+
+    <section class="product-item py-5 border-bottom" id="g-pro-x">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/logitech g pro x.webp" class="img-fluid product-page__img" alt="Мышь Logitech G Pro X Superlight">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Мыши</span>
+            <span class="badge bg-warning text-dark">Хит</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Мышь Logitech G Pro X Superlight</h2>
+          <p class="text-secondary">Беспроводная игровая мышь весом 63 грамма. Сенсор HERO 25K точно отслеживает движение, а Lightspeed даёт задержку на уровне проводной мыши. Подходит для игр и повседневной работы.</p>
+          <p class="fs-3 fw-bold mb-3">12 899 ₽</p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Игровая мышь</td></tr>
+                <tr><th scope="row">Сенсор</th><td>HERO 25K, до 25 600 DPI</td></tr>
+                <tr><th scope="row">Подключение</th><td>Lightspeed 2,4 ГГц</td></tr>
+                <tr><th scope="row">Вес</th><td>63 г</td></tr>
+                <tr><th scope="row">Автономность</th><td>до 70 часов</td></tr>
+                <tr><th scope="row">Цвет</th><td>Чёрный</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-item py-5 border-bottom" id="fifine-am8">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5 order-lg-2">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/fifine am8.webp" class="img-fluid product-page__img" alt="Микрофон Fifine AM8">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Микрофоны</span>
+            <span class="badge bg-success">Новинка</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Микрофон Fifine AM8</h2>
+          <p class="text-secondary">Универсальный динамический микрофон с выходами USB и XLR. Чистый звук для звонков, стримов, записи голоса и подкастов. Регулятор громкости и RGB-подсветка на корпусе.</p>
+          <p class="fs-3 fw-bold mb-3">4 799 ₽</p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Динамический микрофон</td></tr>
+                <tr><th scope="row">Подключение</th><td>USB-C / XLR</td></tr>
+                <tr><th scope="row">Диаграмма</th><td>Кардиоида</td></tr>
+                <tr><th scope="row">Управление</th><td>Громкость, выключение звука</td></tr>
+                <tr><th scope="row">Назначение</th><td>Стримы, звонки, запись</td></tr>
+                <tr><th scope="row">Подсветка</th><td>RGB</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-item py-5 border-bottom" id="fifine-am8t">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/fifine am8t.webp" class="img-fluid product-page__img" alt="Микрофон Fifine AM8T">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Микрофоны</span>
+            <span class="badge bg-danger">Скидка</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Микрофон Fifine AM8T</h2>
+          <p class="text-secondary">Комплект из микрофона AM8 и настольного пантографа. Микрофон легко поставить в удобное положение, а стол остаётся свободным. Хороший вариант для стримов и записи.</p>
+          <p class="fs-3 fw-bold mb-3">5 499 ₽ <small class="fs-5 text-secondary text-decoration-line-through fw-normal">6 299 ₽</small></p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Микрофон на стойке</td></tr>
+                <tr><th scope="row">Подключение</th><td>USB-C / XLR</td></tr>
+                <tr><th scope="row">Стойка</th><td>Регулируемый пантограф</td></tr>
+                <tr><th scope="row">Крепление</th><td>Струбцина к столу</td></tr>
+                <tr><th scope="row">Назначение</th><td>Стримы, запись, звонки</td></tr>
+                <tr><th scope="row">Комплект</th><td>Микрофон, стойка, ветрозащита</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-item py-5 border-bottom" id="keychron-k2">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5 order-lg-2">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/keychron k2.webp" class="img-fluid product-page__img" alt="Клавиатура Keychron K2">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Клавиатуры</span>
+            <span class="badge bg-warning text-dark">Хит</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Клавиатура Keychron K2</h2>
+          <p class="text-secondary">Компактная механическая клавиатура формата 75%. Работает по Bluetooth с тремя устройствами или по кабелю USB-C, совместима с Windows и macOS.</p>
+          <p class="fs-3 fw-bold mb-3">8 990 ₽</p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Механическая клавиатура</td></tr>
+                <tr><th scope="row">Клавиш</th><td>84</td></tr>
+                <tr><th scope="row">Подключение</th><td>Bluetooth 5.1 / USB-C</td></tr>
+                <tr><th scope="row">Переключатели</th><td>Gateron Brown</td></tr>
+                <tr><th scope="row">Подсветка</th><td>Белая</td></tr>
+                <tr><th scope="row">Аккумулятор</th><td>4000 мА·ч</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-item py-5 border-bottom" id="hyperx-cloud-3">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/hyperx cloud iii.webp" class="img-fluid product-page__img" alt="Гарнитура HyperX Cloud III">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Гарнитуры</span>
+            <span class="badge bg-danger">Скидка</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Гарнитура HyperX Cloud III</h2>
+          <p class="text-secondary">Игровая гарнитура с 53-мм драйверами и пространственным звуком. Мягкие амбушюры с эффектом памяти, съёмный микрофон с шумоподавлением.</p>
+          <p class="fs-3 fw-bold mb-3">9 490 ₽ <small class="fs-5 text-secondary text-decoration-line-through fw-normal">10 990 ₽</small></p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Игровая гарнитура</td></tr>
+                <tr><th scope="row">Драйверы</th><td>53 мм</td></tr>
+                <tr><th scope="row">Подключение</th><td>USB / 3,5 мм</td></tr>
+                <tr><th scope="row">Микрофон</th><td>Съёмный, с шумоподавлением</td></tr>
+                <tr><th scope="row">Вес</th><td>310 г</td></tr>
+                <tr><th scope="row">Совместимость</th><td>ПК, PS5, Xbox, Switch</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-item py-5 border-bottom" id="logitech-c920">
+      <div class="row g-4 g-lg-5 align-items-center">
+        <div class="col-12 col-lg-5 order-lg-2">
+          <div class="border rounded p-4 bg-white text-center">
+            <img src="images/logitech c920.webp" class="img-fluid product-page__img" alt="Веб-камера Logitech C920">
+          </div>
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="d-flex flex-wrap gap-2 mb-3">
+            <span class="badge bg-light text-dark border">Веб-камеры</span>
+            <span class="badge bg-success">В наличии</span>
+          </div>
+          <h2 class="h3 mb-3">Веб-камера Logitech C920</h2>
+          <p class="text-secondary">Веб-камера Full HD для видеозвонков, учёбы и стримов. Автофокус, автокоррекция освещения и два встроенных микрофона для стереозвука.</p>
+          <p class="fs-3 fw-bold mb-3">6 490 ₽</p>
+          <table class="table table-sm table-striped mb-4">
+            <tbody>
+                <tr><th scope="row">Тип</th><td>Веб-камера</td></tr>
+                <tr><th scope="row">Разрешение</th><td>1080p, 30 кадров/с</td></tr>
+                <tr><th scope="row">Фокус</th><td>Автофокус</td></tr>
+                <tr><th scope="row">Угол обзора</th><td>78°</td></tr>
+                <tr><th scope="row">Микрофоны</th><td>2, стерео</td></tr>
+                <tr><th scope="row">Подключение</th><td>USB-A</td></tr>
+            </tbody>
+          </table>
+          <div class="d-flex flex-column flex-sm-row gap-2">
+            <button class="btn btn-brand" type="button" data-bs-toggle="modal" data-bs-target="#orderModal">Быстрая заявка</button>
+            <a href="order.html" class="btn btn-outline-dark">Заказать товар</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Доставка и гарантия</h2>
+      <div class="accordion" id="productInfo">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#infoDelivery" aria-expanded="true" aria-controls="infoDelivery">
+              Доставка
+            </button>
+          </h3>
+          <div id="infoDelivery" class="accordion-collapse collapse show" data-bs-parent="#productInfo">
+            <div class="accordion-body">
+              По Москве — на следующий день курьером. По России — службами СДЭК и Почта России, от 2 до 7 дней.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infoPayment" aria-expanded="false" aria-controls="infoPayment">
+              Оплата
+            </button>
+          </h3>
+          <div id="infoPayment" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+            <div class="accordion-body">
+              Картой онлайн, по СБП или наличными курьеру при получении.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#infoWarranty" aria-expanded="false" aria-controls="infoWarranty">
+              Гарантия и возврат
+            </button>
+          </h3>
+          <div id="infoWarranty" class="accordion-collapse collapse" data-bs-parent="#productInfo">
+            <div class="accordion-body">
+              Официальная гарантия производителя до 2 лет. Возврат в течение 14 дней, если товар не подошёл.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <form action="#" method="post">
+          <div class="modal-header">
+            <h2 class="modal-title h5" id="orderModalLabel">Быстрая заявка</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="modal-product" class="form-label">Товар</label>
+              <select id="modal-product" name="product" class="form-select" required>
+                <option value="" selected disabled>Выберите товар</option>
+                <option>Мышь Logitech G Pro X Superlight</option>
+                <option>Микрофон Fifine AM8</option>
+                <option>Микрофон Fifine AM8T</option>
+                <option>Клавиатура Keychron K2</option>
+                <option>Гарнитура HyperX Cloud III</option>
+                <option>Веб-камера Logitech C920</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="modal-name" class="form-label">Имя</label>
+              <input id="modal-name" name="name" type="text" class="form-control" placeholder="Иван" required>
+            </div>
+            <div class="mb-3">
+              <label for="modal-phone" class="form-label">Телефон</label>
+              <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input id="modal-phone" name="phone" type="tel" class="form-control" placeholder="900 000-00-00" required>
+              </div>
+            </div>
+            <div class="form-check">
+              <input id="modal-agree" name="agree" type="checkbox" class="form-check-input" required>
+              <label for="modal-agree" class="form-check-label">Согласен на обработку персональных данных</label>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Закрыть</button>
+            <button type="submit" class="btn btn-brand">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white-50 py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 text-white fw-bold">DeviceHub</p>
+          <p class="mb-0 small">© 2026 DeviceHub. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end small">
+          <p class="mb-1">Дисциплина: Фронтенд и бэкенд разработка</p>
+          <p class="mb-0">Чукалов Егор, ЭФБО-03-25</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
