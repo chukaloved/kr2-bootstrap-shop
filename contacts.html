@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Контакты магазина DeviceHub, обратная связь и частые вопросы">
+  <title>Контакты — DeviceHub</title>
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Device<span class="text-brand">Hub</span></a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Открыть меню">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="catalog.html">Каталог</a></li>
+            <li class="nav-item"><a class="nav-link" href="product.html">Товары</a></li>
+            <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacts.html">Контакты</a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ещё
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="index.html#advantages">Преимущества</a></li>
+                <li><a class="dropdown-item" href="index.html#popular">Популярные товары</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+                <li><a class="dropdown-item" href="contacts.html#faq">Частые вопросы</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container my-5">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Контакты</li>
+      </ol>
+    </nav>
+
+    <h1 class="mb-4">Контакты</h1>
+
+    <div class="row g-4">
+      <div class="col-12 col-lg-5">
+        <div class="card shadow-sm h-100">
+          <div class="card-body p-4">
+            <h2 class="h5 mb-3">Шоурум DeviceHub</h2>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item px-0"><span class="text-secondary d-block small">Адрес</span>Москва, проспект Вернадского, 78</li>
+              <li class="list-group-item px-0"><span class="text-secondary d-block small">Телефон</span><a href="tel:+74950000000" class="link-dark">+7 (495) 000-00-00</a></li>
+              <li class="list-group-item px-0"><span class="text-secondary d-block small">E-mail</span><a href="mailto:hello@devicehub.ru" class="link-dark">hello@devicehub.ru</a></li>
+              <li class="list-group-item px-0"><span class="text-secondary d-block small">Пн–Пт</span>10:00–21:00</li>
+              <li class="list-group-item px-0"><span class="text-secondary d-block small">Сб–Вс</span>11:00–19:00</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-lg-7" id="feedback">
+        <div class="card shadow-sm h-100">
+          <div class="card-body p-4">
+            <h2 class="h5 mb-3">Обратная связь</h2>
+            <form action="#" method="post" class="needs-validation" novalidate data-toast="feedbackToast">
+              <div class="row g-3">
+                <div class="col-12 col-md-6">
+                  <label for="feedback-name" class="form-label">Имя</label>
+                  <input id="feedback-name" name="name" type="text" class="form-control" required>
+                  <div class="invalid-feedback">Укажите имя.</div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label for="feedback-email" class="form-label">E-mail</label>
+                  <input id="feedback-email" name="email" type="email" class="form-control" required>
+                  <div class="invalid-feedback">Введите корректный e-mail.</div>
+                </div>
+                <div class="col-12">
+                  <label for="feedback-topic" class="form-label">Тема</label>
+                  <select id="feedback-topic" name="topic" class="form-select" required>
+                    <option value="" selected disabled>Выберите тему</option>
+                    <option>Вопрос по товару</option>
+                    <option>Доставка и оплата</option>
+                    <option>Гарантия и возврат</option>
+                    <option>Другое</option>
+                  </select>
+                  <div class="invalid-feedback">Выберите тему.</div>
+                </div>
+                <div class="col-12">
+                  <label for="feedback-message" class="form-label">Сообщение</label>
+                  <textarea id="feedback-message" name="message" class="form-control" rows="4" minlength="10" required></textarea>
+                  <div class="invalid-feedback">Напишите сообщение (не короче 10 символов).</div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input id="feedback-agree" name="agree" type="checkbox" class="form-check-input" required>
+                    <label for="feedback-agree" class="form-check-label">Согласен на обработку персональных данных</label>
+                    <div class="invalid-feedback">Нужно согласие.</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-brand px-4">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="mt-5" id="faq">
+      <h2 class="h4 mb-3">Частые вопросы</h2>
+      <div class="accordion accordion-flush border rounded" id="faqList">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="false" aria-controls="faq1">
+              Можно ли проверить товар перед покупкой?
+            </button>
+          </h3>
+          <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqList">
+            <div class="accordion-body">Да, в шоуруме можно попробовать любую мышь, клавиатуру или микрофон из каталога.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+              Сколько стоит доставка?
+            </button>
+          </h3>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqList">
+            <div class="accordion-body">По Москве доставка бесплатная при заказе от 5 000 ₽, иначе — 390 ₽. По России стоимость считает служба доставки.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+              Как вернуть товар?
+            </button>
+          </h3>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqList">
+            <div class="accordion-body">В течение 14 дней товар можно вернуть, если сохранены упаковка и товарный вид. Деньги вернём тем же способом, которым вы платили.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+              Есть ли гарантия?
+            </button>
+          </h3>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqList">
+            <div class="accordion-body">На всю технику действует официальная гарантия производителя от 1 до 2 лет.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="feedbackToast" class="toast align-items-center text-bg-success border-0" role="status" aria-live="polite" aria-atomic="true">
+      <div class="d-flex">
+        <div class="toast-body">Сообщение отправлено! Ответим на e-mail в течение дня.</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Закрыть"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-dark text-white-50 py-4 mt-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 text-white fw-bold">DeviceHub</p>
+          <p class="mb-0 small">© 2026 DeviceHub. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end small">
+          <p class="mb-1">Дисциплина: Фронтенд и бэкенд разработка</p>
+          <p class="mb-0">Чукалов Егор, ЭФБО-03-25</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
