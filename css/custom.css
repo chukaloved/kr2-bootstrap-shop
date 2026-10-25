@@ -42,3 +42,18 @@
   max-height: 420px;
   object-fit: contain;
 }
+
+.promo-slide {
+  min-height: 340px;
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+.promo-slide__img {
+  max-height: 260px;
+  object-fit: contain;
+}
+
+.product-item {
+  scroll-margin-top: 1rem;
+}
